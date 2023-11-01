@@ -57,6 +57,18 @@ header {
     background: #fefefe;
 }
 
+.location {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.location h2 {
+    color: #333;
+}
+
 @media only screen and (max-width: 1320px) {
     header {
         padding: 0 50px;
