@@ -8,6 +8,91 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-bar ul li {
+            margin: 0 10px;
+        }
+
+        .Menu{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        Menu div {
+            width: calc(50% - 20px); 
+            margin: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid;
+        }
+
+        .Menu div big {
+            color: white;
+        }
+
+        .Menu h1 {
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+
+        .Menu img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+        }
+
+        .Menu p {
+            margin: 10px 0;
+        }
+
+        .Menu big {
+            display: block;
+        }
+
+        .addToCartButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,15 +125,88 @@
             </ul>
         </nav>
     </header>
-
-    <div id="contact-info">
-        <footer>
-            <h2>Contact Information</h2>
-            <p>Address: 308 Negra Arroyo Lane, Alberquerque</p>
-            <p>Phone: (337) 987-3333</p>
-            <p>Email: winglover@techtitanwings.com</p>
-        </footer>
+ 
+    <div class = "Menu">
+        <h1>Menu Items</h1>
+    <!-- 1st item -->
+        <div>
+            <img src="img/buffalo.jpg" alt="Buffalo Wings">
+            <p><big>Buffalo Wings</big></p>
+            <big>Price: $8.99</big>
+            <button class="addToCartButton" onclick="addToCart('Buffalo Wings')">Add to Cart</button>
+        </div>
+    <!-- 2nd item -->
+        <div>
+            <img src="img/BBQWings.jpg" alt="BBQ Wings">
+            <p><big>BBQ Wings</big></p>
+            <big>Price: $8.99</big>
+            <button class="addToCartButton" onclick="addToCart('BBQ Wings')">Add to Cart</button>
+        </div>
+    <!-- 3rd item -->
+        <div>
+            <img src="img/GarlicParmesean.jpg" alt="Garlic Parmesean">
+            <p><big>Garlic Parmesean Wings</big></p>
+            <big>Price: $8.99</big>
+            <button class="addToCartButton" onclick="addToCart('Garlic Parmesean Wings')">Add to Cart</button>
+        </div>
+    <!-- 4th item -->
+        <div>
+            <img src="img/Reaper.png" alt="Carolina Reaper Wings">
+            <p><big>Carolina Reaper Wings</big></p>
+            <big>Price: $8.99</big>
+            <button class="addToCartButton" onclick="addToCart('Carolina Reaper Wings')">Add to Cart</button>
+        </div>
+    <!-- 5th item -->
+        <div>
+            <img src="img/Cajun.png" alt="Cajun Wings">
+            <p><big>Cajun Wings</big></p>
+            <big>Price: $8.99</big>
+            <button class="addToCartButton" onclick="addToCart('Cajun Wings')">Add to Cart</button>
+        </div>
+    <!-- 6th item -->
+        <div>
+            <img src="img/Ghost.jpg" alt="Ghost Pepper Wings">
+            <p><big>Ghost Pepper Wings</big></p>
+            <big>Price: $8.99</big>
+            <button class="addToCartButton" onclick="addToCart('Ghost Pepper Wings')">Add to Cart</button>
+        </div>
+    <!-- 7th item -->
+        <div>
+            <img src="img/Plain.jpg" alt="Plain Wings">
+            <p><big>Plain Wings</big></p>
+            <big>Price: $8.99</big>
+            <button class="addToCartButton" onclick="addToCart('Plain Wings')">Add to Cart</button>
+        </div>
+        <!-- 8th item -->
+        <div>
+            <img src="img/Combo1.jpg" alt="Wings Combo 1">
+            <p><big>Wings Combo 1</big></p>
+            <big>Price: $29.99</big>
+            <button class="addToCartButton" onclick="addToCart('Wings Combo 1')">Add to Cart</button>
+        </div>
+        <!-- 9th item -->
+        <div>
+            <img src="img/Combo2.jpg" alt="Wings Combo 2">
+            <p><big>Wings Combo 2</big></p>
+            <big>Price: $14.99</big>
+            <button class="addToCartButton" onclick="addToCart('Wings Combo 2')">Add to Cart</button>
+        </div>
+        <!-- 10th item -->
+        <div>
+            <img src="img/Combo3.jpg" alt="Wings Combo 3">
+            <p><big>Wings Combo 3</big></p>
+            <big>Price: $12.99</big>
+            <button class="addToCartButton" onclick="addToCart('Wings Combo 3')">Add to Cart</button>
+        </div>
     </div>
+
+    <!-- Script to use the addToCart Function-->
+    <script>
+        function addToCart(itemName) {
+            // Add your cart logic here, e.g., add the selected item to the cart.
+            alert(itemName + ' added to the cart.');
+        }
+    </script>
 </body>
 
 </html>
