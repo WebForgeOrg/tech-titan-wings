@@ -1,3 +1,4 @@
+/* Reset some default styles for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/* Style for the body element, including background image and overlay */
 body {
   background: #fff;
   margin: 0;
@@ -18,6 +20,7 @@ body {
   height: 100vh;
 }
 
+/* Create a semi-transparent overlay over the background image */
 body::before {
   content: "";
   position: fixed;
@@ -29,189 +32,209 @@ body::before {
   z-index: -1;
 }
 
+/* Style for the 'welcome' section header */
 #welcome h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: clamp(4rem, 4vw, 3rem); 
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(4rem, 4vw, 3rem);
 }
 
+/* Style for the 'welcome' section paragraph */
 #welcome p {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: clamp(1rem, 2vw, 2rem); 
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
+/* Style for the 'about-us' section header */
 #about-us h2 {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: clamp(4rem, 8vw, 2rem);
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(4rem, 8vw, 2rem);
 }
 
+/* Style for the 'about-us' section paragraph */
 #about-us p {
-    position: absolute;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
+/* Style for a button element */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF5722;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center; 
-    position: absolute;
-    top: 30%; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 150px; 
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF5722;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
 }
 
+/* Apply a 'flame' animation to the button when it has the 'flame-animation' class */
 .button.flame-animation {
-    animation: flame 0.5s infinite alternate; /* Apply the flame animation */
+  animation: flame 0.5s infinite alternate;
 }
 
+/* Keyframes for the 'flame' animation */
 @keyframes flame {
-    0% {
-        background-color: #FF5722;
-    }
-    50% {
-        background-color: #FF9900; /* Change to a lighter color in the middle of the animation */
-    }
-    100% {
-        background-color: #FF5722;
-    }
+  0% {
+    background-color: #FF5722;
+  }
+  50% {
+    background-color: #FF9900;
+  }
+  100% {
+    background-color: #FF5722;
+  }
 }
 
+/* Style for the button when hovering over it */
 .button:hover {
-    background-color: black;
-    text-decoration: underline;
+  background-color: black;
+  text-decoration: underline;
 }
 
-#contact-header{
-    text-align: center;
-    color: white;
-    font-size: larger;
+/* Style for the 'contact-header' element */
+#contact-header {
+  text-align: center;
+  color: white;
+  font-size: larger;
 }
 
+/* Style for the review container */
 .review-container {
-    text-align: center; /* Center-align the content within the container */
-    margin-top: 50px; /* Add top margin for spacing */
-    padding: 20px; /* Add padding for spacing around the container */
-    border-radius: 10px; /* Add border radius for a rounded container */
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-/* CSS for the review form */
+/* Style for the review form */
 .review-form {
-    text-align: center; /* Center-align the content within the form */
-    color: white; /* Set the font color to white */
-    font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+  color: white;
+  font-size: 24px;
 }
 
+/* Style for the review form heading */
 .review-form h2 {
-    font-size: 32px; /* Increase the font size for the heading */
+  font-size: 32px;
 }
 
+/* Style for the review form textarea */
 .review-form textarea {
-    width: 50%; /* Make the textarea full width */
-    height: 400px;
-    padding: 10px; /* Add padding for spacing */
-    font-size: 20px; /* Adjust the font size for the textarea */
-    border: none; /* Remove the border, if desired */
-    background-color: white; /* Set the background color to transparent */
-    color: black; /* Set the font color to white */
-    margin-bottom: 10px; /* Add some bottom margin for spacing */
-    resize: none;
+  width: 50%;
+  height: 400px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  resize: none;
 }
 
+/* Style for the review form submit button */
 .review-form input[type="submit"] {
-    padding: 10px 20px; /* Adjust the padding as needed */
-    font-size: 24px; /* Adjust the font size for the button */
-    background-color: #FF5722; /* Set the button background color */
-    color: white; /* Set the button text color to white */
-    border: none; /* Remove the button border, if desired */
-    border-radius: 5px; /* Add some border radius for a rounded button */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    margin-left: 47%;
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: 47%;
 }
 
+/* Style for the review form submit button on hover */
 .review-form input[type="submit"]:hover {
-    background-color: #E64A19; /* Change the button background color on hover */
+  background-color: #E64A19;
 }
 
-
+/* Style for the newsletter container */
 .newsletter-container {
-    text-align: center; /* Center-align the content within the container */
-    margin-top: 5%; /* Add top margin for spacing */
-    padding: 20px; /* Add padding for spacing around the container */
-    border-radius: 10px; /* Add border radius for a rounded container */
+  text-align: center;
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 10px;
 }
 
+/* Style for the newsletter form */
 .newsletter-form {
-    text-align: center; /* Center-align the form content */
-    color: white; /* Set the font color to white */
-    font-size: 24px; /* Adjust the font size as needed */
-    margin-top: 20px; /* Add some top margin for spacing */
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-top: 20px;
 }
 
+/* Style for the newsletter form heading */
 .newsletter-form h2 {
-    font-size: 32px; /* Increase the font size for the heading */
+  font-size: 32px;
 }
 
+/* Style for the email input field in the newsletter form */
 .newsletter-form input[type="email"] {
-    width: 10%; /* Make the input field full width */
-    padding: 10px; /* Add padding for spacing */
-    font-size: 20px; /* Adjust the font size for the input field */
-    border: none; /* Remove the border, if desired */
-    background-color: white; /* Set the background color to transparent */
-    color: black; /* Set the font color to white */
-    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  width: 10%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
 }
 
+/* Style for the submit button in the newsletter form */
 .newsletter-form input[type="submit"] {
-    padding: 10px 20px; /* Adjust the padding as needed */
-    font-size: 24px; /* Adjust the font size for the button */
-    background-color: #FF5722; /* Set the button background color */
-    color: white; /* Set the button text color to white */
-    border: none; /* Remove the button border, if desired */
-    border-radius: 5px; /* Add some border radius for a rounded button */
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+/* Style for the submit button in the newsletter form on hover */
 .newsletter-form input[type="submit"]:hover {
-    background-color: #E64A19; /* Change the button background color on hover */
+  background-color: #E64A19;
 }
 
-
-#contact-info footer{
-    background-color: #11101b;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Style for the footer containing contact information */
+#contact-info footer {
+  background-color: #11101b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
+/* Style for the header section, including navigation */
 header {
   width: 100%;
   height: 80px;
@@ -222,6 +245,7 @@ header {
   padding: 0 100px;
 }
 
+/* Style for the logo image in the header */
 .logo img {
   position: absolute;
   top: 3px;
@@ -230,6 +254,7 @@ header {
   height: auto;
 }
 
+/* Style for the navigation bar and its list items */
 .nav-bar ul {
   display: flex;
 }
@@ -244,37 +269,44 @@ header {
   margin: 0 5px;
 }
 
+/* Style for the shopping bag icon image in the navigation bar */
 .shopping-bag img {
   width: 30px;
   height: auto;
 }
 
+/* Style for navigation links on hover */
 .nav-bar ul li a:hover {
   color: #11101b;
   background: #fefefe;
 }
 
+/* Style for navigation links' images on hover */
 .nav-bar ul li a:hover img {
   filter: invert(100%);
 }
 
+/* Style for navigation links when active */
 .nav-bar ul li a:active {
   color: #11101b;
   background: #fefefe;
 }
 
+/* Media query for smaller screens adjusting header padding */
 @media only screen and (max-width: 1320px) {
   header {
     padding: 0 50px;
   }
 }
 
+/* Media query for even smaller screens further adjusting header padding */
 @media only screen and (max-width: 1100px) {
   header {
     padding: 0 30px;
   }
 }
 
+/* Reset margin and padding for specific HTML elements */
 body,
 h1,
 h2,
@@ -284,6 +316,7 @@ table {
   padding: 0;
 }
 
+/* Style for a container of locations */
 .location-group {
   max-width: 800px;
   margin: 0 auto;
@@ -291,14 +324,15 @@ table {
   background-color: rgb(255, 255, 255, 1);
 }
 
+/* Style for individual location containers */
 .location {
   margin: 20px 0;
   padding: 10px;
   background-color: rgb(156, 47, 17, 0.2);
-  /* border: 1px solid #ccc; */
   border-radius: 10px;
 }
 
+/* Style for order buttons in location containers */
 .order-button {
   display: inline-block;
   text-align: center;
@@ -310,6 +344,7 @@ table {
   border-radius: 10px;
 }
 
+/* Style for a table displaying business hours */
 .hours-table {
   max-width: 800px;
   margin: 20px auto;
@@ -317,10 +352,12 @@ table {
   background-color: rgb(255, 255, 255, 1);
 }
 
+/* Style for the heading of the business hours table */
 .hours-table h1 {
   color: #333;
 }
 
+/* Style for the table and its headers and cells */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -331,6 +368,7 @@ th {
   padding: 10px;
   text-align: left;
 }
+
 td {
   border: 1px solid #333;
   padding: 10px;

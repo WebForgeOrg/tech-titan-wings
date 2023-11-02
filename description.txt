@@ -1,0 +1,23 @@
+WEBFORGE: TECH TITANS WINGS
+BY: CHANCE DAIGLE, RYAN LEBATO, ARBIN SHRESTHA, NATHAN GUIDRY
+
+WEB STRUCTURE:
+--------------
+The web structure for this website follows that of a traditional chicken wing ecommerce website. There contains a home page,
+contact page, menu page, locations page, menu page, and cart page-- all created via html, css, and javascript. Plans to implement
+SQL Server and PHP are in place to complete the initial cart functionality presented in this website's first front-end prototype.
+
+WCAG STANDARDS:
+--------------
+The WCAG Standard we've chosen to focus on is "Understandable", where information and the operation of user interface must be understandable.
+We've accomplished this by following industry standard web structures so as to familiarize the user, used common modern language, made self-
+explanatory buttons with sufficient labels that indicate their functions, and added visual aids in the form of pictures to accompany any
+product descriptions.
+
+WEB HOST:
+--------------
+The web host we've chosen to utilize is netlify. Netlify is a remote-first cloud computing company that offers a development platform 
+that includes build, deploy, and serverless backend services for web applications and dynamic websites. This was a perfect choice for our
+business since it offers scalability and seamless connections with SQL Server and PHP, which will be implemented for the second benchmark 
+of the website. Not to mention that it is free to begin, and has cheap rates for when our website begins to gain traction. For now, it is
+great for our use in testing our product online.
