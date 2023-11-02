@@ -8,94 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 10px 20px;
-        }
-
-        .logo {
-            margin: 0;
-        }
-
-        .nav-bar ul {
-            list-style: none;
-            display: flex;
-        }
-
-        .nav-bar ul li {
-            margin: 0 10px;
-        }
-
-        .Menu{
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 800px;
-            padding: 20px;
-            justify-content: space-between;
-        }
-
-        Menu div {
-            width: calc(50% - 20px); 
-            margin: 10px;
-            padding: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            border: 1px solid;
-        }
-
-        .Menu div big {
-            color: white;
-        }
-
-        .Menu h1 {
-            width: 100%;
-            text-align: center;
-            color: white;
-        }
-
-        .Menu img {
-            max-width: 100%;
-            height: auto;
-            width: 300px;
-        }
-
-        .Menu p {
-            margin: 10px 0;
-        }
-
-        .Menu big {
-            display: block;
-        }
-
-        .addToCartButton {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 10px 0;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="css/Menu.css">
 </head>
 
-<body>
+<body onload="setLocalStorage()">
     <header>
         <div class="logo">
             <a href="index.html">
@@ -188,25 +104,17 @@
         <div>
             <img src="img/Combo2.jpg" alt="Wings Combo 2">
             <p><big>Wings Combo 2</big></p>
-            <big>Price: $14.99</big>
+            <big>Price: $19.99</big>
             <button class="addToCartButton" onclick="addToCart('Wings Combo 2')">Add to Cart</button>
         </div>
         <!-- 10th item -->
         <div>
             <img src="img/Combo3.jpg" alt="Wings Combo 3">
             <p><big>Wings Combo 3</big></p>
-            <big>Price: $12.99</big>
+            <big>Price: $13.99</big>
             <button class="addToCartButton" onclick="addToCart('Wings Combo 3')">Add to Cart</button>
         </div>
     </div>
-
-    <!-- Script to use the addToCart Function-->
-    <script>
-        function addToCart(itemName) {
-            // Add your cart logic here, e.g., add the selected item to the cart.
-            alert(itemName + ' added to the cart.');
-        }
-    </script>
 </body>
 
 </html>
