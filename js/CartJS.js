@@ -15,7 +15,7 @@ function retrieveCartItems() {
             + "<div class=\"cart-info\">"
             + "<img src=\"" + cartItems[i].image + "\" alt=\"\">"
             + "<div>"
-            + "<p>BBQ Wings</p>"
+            + "<p>" + cartItems[i].name + "</p>"
             + "<small>Price: $" + cartItems[i].price + "</small>"
             + "<br>"
             + "<a href=\"\">Remove</a>"
@@ -23,7 +23,7 @@ function retrieveCartItems() {
             + "</div>"
             + "</td>"
             + "<td><input type=\"number\" value=\"1\" min=\"1\"></td>"
-            + "<td>$50.00</td>"
+            + "<td>" + cartItems[i].price + "</td>"
             + "</tr>"
         );
     }
