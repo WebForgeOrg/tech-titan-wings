@@ -41,15 +41,19 @@
         </nav>
     </header>
 
+    <!-- Cart Table that shows all items added (hardcoded until PHP implementation) -->
     <div class="small-container cart-page">
+        <!-- Wrapped in a form for data collection -->
         <form action="" method="post">
 
             <table id="cart">
+                <!-- Column headers -->
                 <tr id="firstTblRow">
                     <th class="cartHeader">Product</th>
                     <th class="cartHeader">Quantity</th>
                     <th class="cartHeader">Subtotal</th>
                 </tr>
+                <!-- All items in cart follow this format -->
                 <tr>
                     <td>
                         <div class="cart-info">
@@ -97,6 +101,7 @@
                 </tr>
             </table>
 
+            <!-- Price calculations -->
             <div class="total-price">
                 <table>
                     <tr>
@@ -114,6 +119,7 @@
                 </table>
             </div>
 
+            <!-- Checkout button to purchase items and submit form -->
             <div id="checkoutBtn">
                 <button>Checkout</button>
             </div>

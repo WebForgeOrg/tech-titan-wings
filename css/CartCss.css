@@ -1,36 +1,46 @@
+ /* This css file is for the Cart page */
+
+ /* for centering table */
  html,
  body {
      height: 100%;
  }
 
+ /* for centering table */
  html {
      margin: auto;
  }
 
+ /* for centering table */
  body {
      margin-left: 25%;
      margin-right: 25%;
  }
 
+ /* for centering table */
  .cart-page {
      margin: 80px auto;
  }
 
+ /* text color */
  p,
  small {
      color: rgba(255, 255, 255, 0.726);
  }
 
+ /* table modifications */
  table {
      width: 100%;
      border-collapse: collapse;
  }
 
+ /* item arrangements */
  .cart-info {
      display: flex;
      flex-wrap: wrap;
  }
 
+ /* header customizations */
  th.cartHeader {
      text-align: left;
      padding: 5px;
@@ -39,6 +49,7 @@
      font-weight: normal;
  }
 
+ /* table data modifications */
  td {
      padding: 10px 5px;
  }
@@ -60,6 +71,7 @@
      font-size: 12px;
  }
 
+ /* text color for totals */
  .itemSubTotal {
      color: rgba(255, 255, 255, 0.726);
  }
@@ -75,6 +87,7 @@
      max-width: 400px;
  }
 
+ /* shift totals on bottom right */
  td:last-child {
      text-align: right;
  }
@@ -87,6 +100,7 @@
      color: rgba(255, 255, 255, 0.726);
  }
 
+ /* button styling subject to change */
  #checkoutBtn {
      display: flex;
      align-items: center;
@@ -103,6 +117,7 @@
      color: white;
  }
 
+ /* responsiveness */
  @media only screen and (max-width: 600px) {
      .cart-info p {
          display: none;
