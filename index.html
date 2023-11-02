@@ -41,13 +41,14 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Welcome text and button -->
     <div id="welcome">
         <h1>Welcome to Tech Titan Wings</h1>
         <p>Discover the Best Wings in Town</p>
-        <a href="menu.html" class="button">View Menu</a>
+        <a href="menu.html" class="button">View Menu</a> <!-- View Menu button -->
     </div>
 
+    <!-- About us text -->
     <div id="about-us">
         <h2>About Us</h2>
         <p>At Tech Titan Wings, we are passionate about serving the most delicious and mouthwatering wings in the city.
@@ -56,7 +57,8 @@
             Visit us today and satisfy your wing cravings!
         </p>
     </div>
-
+    
+    <!-- Contact Information for footer -->
     <div id="contact-info">
         <footer>
             <h2>Contact Information</h2>
@@ -65,19 +67,22 @@
             <p>Email: winglover@techtitanwings.com</p>
         </footer>
     </div>
-
+    
     <script>
+        // Get the "View Menu" button element
         const viewMenuButton = document.querySelector('.button');
     
+        // Add an event listener for mouseover (when the mouse hovers over the button)
         viewMenuButton.addEventListener('mouseover', function() {
-            viewMenuButton.classList.add('flame-animation');
+            viewMenuButton.classList.add('flame-animation'); // Add a CSS class to start the flame animation
         });
     
+        // Add an event listener for mouseout (when the mouse leaves the button)
         viewMenuButton.addEventListener('mouseout', function() {
-            viewMenuButton.classList.remove('flame-animation');
+            viewMenuButton.classList.remove('flame-animation'); // Remove the CSS class to stop the flame animation
         });
     </script>
-
+    
 </body>
 
 </html>

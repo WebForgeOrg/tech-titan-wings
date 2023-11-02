@@ -43,51 +43,55 @@
     </header>
 
     <div id="contact-header">
-        <h1>Let Us Know What You Think!</h1>
-
+        <h1>Let Us Know What You Think!</h1> 
+        <!-- Review Container -->
         <div class="review-container">
             <div class="review-form">
-                <h2>Send us a Review</h2>
+                <h2>Send us a Review</h2> <!-- Heading for the review form -->
                 <form action="submit-review.php" method="post">
-                    <textarea name="review" placeholder="Write your review" required></textarea>
-                    <input type="submit" value="Submit Review">
+                    <textarea name="review" placeholder="Write your review" required></textarea> <!-- Review input field -->
+                    <input type="submit" value="Submit Review"> <!-- Submit button for the review form -->
                 </form>
             </div>
         </div>
-
+    
+        <!-- Newsletter Container -->
         <div class="newsletter-container">
             <div class="newsletter-form">
-                <h2>Subscribe to our Newsletter</h2>
+                <h2>Subscribe to our Newsletter</h2> <!-- Heading for the newsletter form -->
                 <form action="subscribe.php" method="post">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <input type="submit" value="Subscribe">
+                    <input type="email" name="email" placeholder="Enter your email" required> <!-- Email input field for newsletter subscription -->
+                    <input type="submit" value="Subscribe"> <!-- Submit button for newsletter subscription -->
                 </form>
             </div>
         </div>
-
+    
+        <!-- Contact Information Section -->
         <div id="contact-info">
             <footer>
-                <h2>Contact Information</h2>
-                <p>Address: 308 Negra Arroyo Lane, Alberquerque</p>
-                <p>Phone: (337) 987-3333</p>
-                <p>Email: winglover@techtitanwings.com</p>
+                <h2>Contact Information</h2> 
+                <p>Address: 308 Negra Arroyo Lane, Alberquerque</p> >
+                <p>Phone: (337) 987-3333</p> 
+                <p>Email: winglover@techtitanwings.com</p> 
             </footer>
         </div>
-
+    
+        <!-- JavaScript to handle form submissions and display alerts -->
         <script>
             const reviewForm = document.querySelector('.review-form form');
             const newsletterForm = document.querySelector('.newsletter-form form');
-        
+    
             reviewForm.addEventListener('submit', function (event) {
-                event.preventDefault(); 
-                alert('👍 Thank you for your review!'); 
+                event.preventDefault(); // Prevent the form from submitting to the server
+                alert('👍 Thank you for your review!'); // Display a thumbs-up alert for reviews
             });
-        
+    
             newsletterForm.addEventListener('submit', function (event) {
-                event.preventDefault(); 
-                alert('👍 Thank you for subscribing to our newsletter!'); 
+                event.preventDefault(); // Prevent the form from submitting to the server
+                alert('👍 Thank you for subscribing to our newsletter!'); // Display a thumbs-up alert for newsletter subscriptions
             });
         </script>
+    </div>
         
 </body>
 
