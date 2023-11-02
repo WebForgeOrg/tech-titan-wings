@@ -17,38 +17,62 @@ body {
     height: 100vh;
 }
 
-#welcome{
+
+#welcome h1 {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 50px;
+    font-size: clamp(1rem, 4vw, 3rem); 
 }
 
-#welcome p{
-    text-align: center;
+#welcome p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: clamp(1rem, 2vw, 2rem); 
 }
 
-.cta-button{
+#about-us h2 {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+#about-us p {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FF5722; 
+    background-color: #FF5722;
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%; 
-    height: 30%; 
-    margin: 0 auto;
+    text-align: center; 
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 150px; 
 }
 
-.cta-button:hover {
+.button:hover {
     background-color: black;
     text-decoration: underline;
 }
@@ -60,19 +84,6 @@ body {
     transform: translate(-50%,-50%);
     color: white;
     font-size: larger;
-}
-
-#about-us{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-size: 30px;
-}
-
-#about-us h2{
-    text-align: center;
 }
 
 #contact-info footer{
@@ -162,3 +173,5 @@ header {
         padding: 0 30px;
     }
 }
+
+
