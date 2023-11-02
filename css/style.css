@@ -83,6 +83,22 @@ body::before {
     width: 150px; 
 }
 
+.button.flame-animation {
+    animation: flame 0.5s infinite alternate; /* Apply the flame animation */
+}
+
+@keyframes flame {
+    0% {
+        background-color: #FF5722;
+    }
+    50% {
+        background-color: #FF9900; /* Change to a lighter color in the middle of the animation */
+    }
+    100% {
+        background-color: #FF5722;
+    }
+}
+
 .button:hover {
     background-color: black;
     text-decoration: underline;

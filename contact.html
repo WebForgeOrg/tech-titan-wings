@@ -72,6 +72,22 @@
                 <p>Email: winglover@techtitanwings.com</p>
             </footer>
         </div>
+
+        <script>
+            const reviewForm = document.querySelector('.review-form form');
+            const newsletterForm = document.querySelector('.newsletter-form form');
+        
+            reviewForm.addEventListener('submit', function (event) {
+                event.preventDefault(); 
+                alert('👍 Thank you for your review!'); 
+            });
+        
+            newsletterForm.addEventListener('submit', function (event) {
+                event.preventDefault(); 
+                alert('👍 Thank you for subscribing to our newsletter!'); 
+            });
+        </script>
+        
 </body>
 
 </html>
