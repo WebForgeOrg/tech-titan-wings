@@ -88,14 +88,103 @@ body::before {
     text-decoration: underline;
 }
 
-#featured-items {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: larger;
+#contact-header{
+    text-align: center;
+    color: white;
+    font-size: larger;
 }
+
+.review-container {
+    text-align: center; /* Center-align the content within the container */
+    margin-top: 50px; /* Add top margin for spacing */
+    padding: 20px; /* Add padding for spacing around the container */
+    border-radius: 10px; /* Add border radius for a rounded container */
+}
+
+/* CSS for the review form */
+.review-form {
+    text-align: center; /* Center-align the content within the form */
+    color: white; /* Set the font color to white */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.review-form h2 {
+    font-size: 32px; /* Increase the font size for the heading */
+}
+
+.review-form textarea {
+    width: 50%; /* Make the textarea full width */
+    height: 400px;
+    padding: 10px; /* Add padding for spacing */
+    font-size: 20px; /* Adjust the font size for the textarea */
+    border: none; /* Remove the border, if desired */
+    background-color: white; /* Set the background color to transparent */
+    color: black; /* Set the font color to white */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    resize: none;
+}
+
+.review-form input[type="submit"] {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    font-size: 24px; /* Adjust the font size for the button */
+    background-color: #FF5722; /* Set the button background color */
+    color: white; /* Set the button text color to white */
+    border: none; /* Remove the button border, if desired */
+    border-radius: 5px; /* Add some border radius for a rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: 47%;
+}
+
+.review-form input[type="submit"]:hover {
+    background-color: #E64A19; /* Change the button background color on hover */
+}
+
+
+.newsletter-container {
+    text-align: center; /* Center-align the content within the container */
+    margin-top: 5%; /* Add top margin for spacing */
+    padding: 20px; /* Add padding for spacing around the container */
+    border-radius: 10px; /* Add border radius for a rounded container */
+}
+
+.newsletter-form {
+    text-align: center; /* Center-align the form content */
+    color: white; /* Set the font color to white */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.newsletter-form h2 {
+    font-size: 32px; /* Increase the font size for the heading */
+}
+
+.newsletter-form input[type="email"] {
+    width: 10%; /* Make the input field full width */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 20px; /* Adjust the font size for the input field */
+    border: none; /* Remove the border, if desired */
+    background-color: white; /* Set the background color to transparent */
+    color: black; /* Set the font color to white */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.newsletter-form input[type="submit"] {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    font-size: 24px; /* Adjust the font size for the button */
+    background-color: #FF5722; /* Set the button background color */
+    color: white; /* Set the button text color to white */
+    border: none; /* Remove the button border, if desired */
+    border-radius: 5px; /* Add some border radius for a rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    background-color: #E64A19; /* Change the button background color on hover */
+}
+
 
 #contact-info footer{
     background-color: #11101b;
