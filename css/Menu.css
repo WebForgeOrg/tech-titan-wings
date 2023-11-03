@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} /* alignment for body  */
 
 header {
     display: flex;
@@ -10,20 +10,20 @@ header {
     align-items: center;
     width: 100%;
     padding: 10px 20px;
-}
+} /*  alignment and padding for header */
 
 .logo {
     margin: 0;
-}
+} /* margin for logo  */
 
 .nav-bar ul {
     list-style: none;
     display: flex;
-}
+} /*  styling for navigation bar  */
 
 .nav-bar ul li {
     margin: 0 10px;
-}
+} /*  style listing */
 
 .Menu{
     display: flex;
@@ -31,7 +31,7 @@ header {
     max-width: 800px;
     padding: 20px;
     justify-content: space-between;
-}
+} /* styling for menu  */
 
 Menu div {
     width: calc(50% - 20px); 
@@ -43,31 +43,31 @@ Menu div {
     align-items: center;
     text-align: center;
     border: 1px solid;
-}
+} /* style for everything in the divs for items */
 
 .Menu div big {
     color: white;
-}
+} /* color for the div to white */
 
 .Menu h1 {
     width: 100%;
     text-align: center;
     color: white;
-}
+} /* color, alignment for h1 */
 
 .Menu img {
     max-width: 100%;
     height: auto;
     width: 300px;
-}
+} /* image, alignment for the images */
 
 .Menu p {
     margin: 10px 0;
-}
+} /* margin for the Item Names */
 
 .Menu big {
     display: block;
-}
+} /* text modification for the names */
 
 .addToCartButton {
     background-color: #4CAF50;
@@ -80,4 +80,4 @@ Menu div {
     font-size: 16px;
     margin: 10px 0;
     cursor: pointer;
-}
+} /* Button styling */
