@@ -42,14 +42,14 @@
         </nav>
     </header>
     <!-- Welcome text and button -->
-    <div id="welcome">
+    <div class="welcome">
         <h1>Welcome to Tech Titan Wings</h1>
         <p>Discover the Best Wings in Town</p>
-        <a href="menu.html" class="button">View Menu</a> <!-- View Menu button -->
+        <a href="menu.html" id="button">View Menu</a> <!-- View Menu button -->
     </div>
 
     <!-- About us text -->
-    <div id="about-us">
+    <div class="about-us">
         <h2>About Us</h2>
         <p>At Tech Titan Wings, we are passionate about serving the most delicious and mouthwatering wings in the city.
             Our secret recipes and high-quality ingredients make our wings a must-try experience.
@@ -58,19 +58,18 @@
         </p>
     </div>
     
-    <!-- Contact Information for footer -->
-    <div id="contact-info">
-        <footer>
-            <h2>Contact Information</h2>
-            <p>Address: 308 Negra Arroyo Lane, Alberquerque</p>
-            <p>Phone: (337) 987-3333</p>
-            <p>Email: winglover@techtitanwings.com</p>
-        </footer>
-    </div>
+    <footer class="contact-info">
+        <div class="footer-content">
+          <h2>Contact Information</h2>
+          <p>Address: 308 Negra Arroyo Lane, Albuquerque</p>
+          <p>Phone: (337) 987-3333</p>
+          <p>Email: winglover@techtitanwings.com</p>
+        </div>
+    </footer>
     
     <script>
         // Get the "View Menu" button element
-        const viewMenuButton = document.querySelector('.button');
+        const viewMenuButton = document.querySelector('#button');
     
         // Add an event listener for mouseover (when the mouse hovers over the button)
         viewMenuButton.addEventListener('mouseover', function() {
