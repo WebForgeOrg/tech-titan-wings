@@ -76,7 +76,7 @@ body::before {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -99,13 +99,13 @@ body::before {
 /* Keyframes for the 'flame' animation */
 @keyframes flame {
   0% {
-    background-color: #FF5722;
+    background-color: #ff5722;
   }
   50% {
-    background-color: #FF9900;
+    background-color: #ff9900;
   }
   100% {
-    background-color: #FF5722;
+    background-color: #ff5722;
   }
 }
 
@@ -159,7 +159,7 @@ body::before {
 .review-form input[type="submit"] {
   padding: 10px 20px;
   font-size: 24px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   color: white;
   border: none;
   border-radius: 5px;
@@ -171,7 +171,7 @@ body::before {
 
 /* Style for the review form submit button on hover */
 .review-form input[type="submit"]:hover {
-  background-color: #E64A19;
+  background-color: #e64a19;
 }
 
 /* Style for the newsletter container */
@@ -210,7 +210,7 @@ body::before {
 .newsletter-form input[type="submit"] {
   padding: 10px 20px;
   font-size: 24px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   color: white;
   border: none;
   border-radius: 5px;
@@ -220,7 +220,7 @@ body::before {
 
 /* Style for the submit button in the newsletter form on hover */
 .newsletter-form input[type="submit"]:hover {
-  background-color: #E64A19;
+  background-color: #e64a19;
 }
 
 /* Style for the footer containing contact information */
@@ -310,8 +310,7 @@ header {
 body,
 h1,
 h2,
-p,
-table {
+p {
   margin: 0;
   padding: 0;
 }
@@ -352,27 +351,34 @@ table {
   background-color: rgb(255, 255, 255, 1);
 }
 
-/* Style for the heading of the business hours table */
-.hours-table h1 {
+/* Style for the container of business hours */
+.hours-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the heading of the business hours */
+.hours-container h1 {
   color: #333;
 }
 
-/* Style for the table and its headers and cells */
-table {
+/* Style for each day */
+.day {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  border-collapse: collapse;
-}
-
-th {
-  color: #333;
-  padding: 10px;
-  text-align: left;
-}
-
-td {
   border: 1px solid #333;
   padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(156, 47, 17, 0.2);
+}
+
+.day span {
   color: #333;
   font-weight: bold;
-  background-color: rgb(156, 47, 17, 0.2);
 }
