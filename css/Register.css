@@ -159,9 +159,9 @@ button {
   font-size: larger;
 }
 
-/* Center the form on smaller screens */
 @media only screen and (max-width: 480px) {
   form {
-    width: 80%;
+    width: 80%; /* Adjust as needed */
+    top: 100%; /* Adjust to leave space at the top */
   }
 }
