@@ -118,6 +118,10 @@ p {
   padding: 0;
 }
 
+label {
+  font-size: larger;
+}
+
 form {
   position: absolute;
   top: 50%;
@@ -128,7 +132,7 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
-  height: 750px;
+  height: 800px;
 }
 
 label {
@@ -152,6 +156,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+  font-size: larger;
 }
 
 /* Center the form on smaller screens */
