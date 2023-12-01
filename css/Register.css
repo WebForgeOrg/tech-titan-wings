@@ -125,7 +125,8 @@ label {
 }
 
 .form-container {
-  position: relative;
+  display: flex;
+  position: absolute;
   margin-top: auto;
   display: flex;
   align-items: center;
@@ -144,8 +145,8 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   max-width: 100%; /* Make sure it doesn't exceed the width of the container */
-  max-height: 80vh; /* Adjust as needed */
-  height: 750px;
+  min-width: 300px;
+  max-height: 100vh; /* Adjust as needed */
 }
 
 label {
