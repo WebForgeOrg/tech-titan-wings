@@ -18,6 +18,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Create a semi-transparent overlay over the background image */
@@ -122,8 +124,17 @@ label {
   font-size: larger;
 }
 
+.form-container {
+  position: relative;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed */
+}
+
 form {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -132,7 +143,9 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
-  height: 800px;
+  max-width: 100%; /* Make sure it doesn't exceed the width of the container */
+  max-height: 80vh; /* Adjust as needed */
+  height: 750px;
 }
 
 label {
@@ -159,9 +172,9 @@ button {
   font-size: larger;
 }
 
+/* Center the form on smaller screens */
 @media only screen and (max-width: 480px) {
   form {
-    width: 80%; /* Adjust as needed */
-    top: 100%; /* Adjust to leave space at the top */
+    width: 80%;
   }
 }
