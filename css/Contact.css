@@ -249,7 +249,7 @@ header {
   background: #11101b;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 100px;
 }
 
@@ -260,6 +260,10 @@ header {
   left: 40px;
   width: 120px;
   height: auto;
+}
+
+.nav-bar {
+  padding-left: 80px;
 }
 
 /* Style for the navigation bar and its list items */
