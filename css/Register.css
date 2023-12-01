@@ -18,8 +18,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Create a semi-transparent overlay over the background image */
@@ -124,31 +122,26 @@ label {
   font-size: larger;
 }
 
+/* Style for the form container */
 .form-container {
-  display: flex;
-  position: absolute;
-  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust as needed */
+  padding: 20px;
 }
 
+/* Style for the form */
 form {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  max-width: 100%; /* Make sure it doesn't exceed the width of the container */
-  min-width: 300px;
-  max-height: 100vh; /* Adjust as needed */
+  width: 100%; /* Make the form width 100% within its container */
+  max-width: 500px; /* Add a max-width if needed */
 }
-
 label {
   display: block;
   margin-bottom: 8px;
