@@ -1,125 +1,236 @@
- /* This css file is for the Cart page */
+/* This css file is for the Cart page */
+/* Reset some default styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
 
- /* for centering table */
- html,
- body {
-     height: 100%;
- }
+/* Style for the body element, including background image and overlay */
+body {
+  background: #fff;
+  margin: 0;
+  background-image: url("../img/rest.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
 
- /* for centering table */
- html {
-     margin: auto;
- }
+/* Create a semi-transparent overlay over the background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
 
- /* for centering table */
- body {
-     margin-left: 25%;
-     margin-right: 25%;
- }
+/* Style for the header section, including navigation */
+header {
+  width: 100%;
+  height: 80px;
+  background: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 100px;
+}
 
- /* for centering table */
- .cart-page {
-     margin: 80px auto;
- }
+/* Style for the logo image in the header */
+.logo img {
+  position: absolute;
+  top: 3px;
+  left: 40px;
+  width: 120px;
+  height: auto;
+}
 
- /* text color */
- p,
- small {
-     color: rgba(255, 255, 255, 0.726);
- }
+.nav-bar {
+  padding-left: 80px;
+}
 
- /* table modifications */
- table {
-     width: 100%;
-     border-collapse: collapse;
- }
+/* Style for the navigation bar and its list items */
+.nav-bar ul {
+  display: flex;
+}
 
- /* item arrangements */
- .cart-info {
-     display: flex;
-     flex-wrap: wrap;
- }
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
 
- /* header customizations */
- th.cartHeader {
-     text-align: left;
-     padding: 5px;
-     color: rgba(255, 255, 255, 0.726);
-     background-color: #ff523b;
-     font-weight: normal;
- }
+/* Style for the shopping bag icon image in the navigation bar */
+.shopping-bag img {
+  width: 30px;
+  height: auto;
+}
 
- /* table data modifications */
- td {
-     padding: 10px 5px;
- }
+/* Style for navigation links on hover */
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background: #fefefe;
+}
 
- td input {
-     width: 40px;
-     height: 30px;
-     padding: 5px;
- }
+/* Style for navigation links' images on hover */
+.nav-bar ul li a:hover img {
+  filter: invert(100%);
+}
 
- td img {
-     width: 80px;
-     height: 80px;
-     margin-right: 10px;
- }
+/* Style for navigation links when active */
+.nav-bar ul li a:active {
+  color: #11101b;
+  background: #fefefe;
+}
 
- td a {
-     color: #9dedd9;
-     font-size: 12px;
- }
+/* Media query for smaller screens adjusting header padding */
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
 
- /* text color for totals */
- .itemSubTotal {
-     color: rgba(255, 255, 255, 0.726);
- }
+/* Media query for even smaller screens further adjusting header padding */
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
 
- .total-price {
-     display: flex;
-     justify-content: flex-end;
- }
+/* Reset margin and padding for specific HTML elements */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
 
- .total-price table {
-     border-top: 3px solid #ff523b;
-     width: 100%;
-     max-width: 400px;
- }
+/* for centering table */
+.cart-page {
+  margin: 80px auto;
+}
 
- /* shift totals on bottom right */
- td:last-child {
-     text-align: right;
- }
+/* text color */
+p,
+small {
+  color: rgba(255, 255, 255, 0.726);
+}
 
- th:last-child {
-     text-align: right;
- }
+/* table modifications */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
- .finalTotal {
-     color: rgba(255, 255, 255, 0.726);
- }
+/* item arrangements */
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
 
- /* button styling subject to change */
- #checkoutBtn {
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
+th {
+  color: #333;
+  padding: 10px;
+  text-align: left;
+}
 
- button {
-     margin: 2px;
-     padding: 0.5em;
-     font-size: 2em;
-     border-radius: 30%;
-     position: relative;
-     background-color: #ff523b;
-     color: white;
- }
+/* header customizations */
+th.cartHeader {
+  text-align: left;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.726);
+  background-color: #ff523b;
+  font-weight: normal;
+}
 
- /* responsiveness */
- @media only screen and (max-width: 600px) {
-     .cart-info p {
-         display: none;
-     }
- }
+/* table data modifications */
+td {
+  padding: 10px 5px;
+  border: 1px solid #333;
+  color: #333;
+  font-weight: bold;
+  background-color: rgb(156, 47, 17, 0.2);
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+td a {
+  color: #9dedd9;
+  font-size: 12px;
+}
+
+/* text color for totals */
+.itemSubTotal {
+  color: rgba(255, 255, 255, 0.726);
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* shift totals on bottom right */
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+.finalTotal {
+  color: rgba(255, 255, 255, 0.726);
+}
+
+/* button styling subject to change */
+#checkoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 2px;
+  padding: 0.5em;
+  font-size: 2em;
+  border-radius: 30%;
+  position: relative;
+  background-color: #ff523b;
+  color: white;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 600px) {
+  .cart-info p {
+    display: none;
+  }
+}
