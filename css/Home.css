@@ -157,16 +157,6 @@ header {
   display: flex;
 }
 
-.nav-bar ul li a {
-  display: block;
-  color: #fefefe;
-  font-size: 20px;
-  padding: 10px 25px;
-  border-radius: 50px;
-  transition: 0.2s;
-  margin: 0 5px;
-}
-
 /* Style for the shopping bag icon image in the navigation bar */
 .shopping-bag img {
   width: 30px;
@@ -177,35 +167,31 @@ header {
   padding-left: 80px;
 }
 
+.nav-bar ul li.nav-item a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
 /* Style for navigation links on hover */
-.nav-bar ul li a:hover {
+.nav-bar ul li.nav-item a:hover {
   color: #11101b;
   background: #fefefe;
 }
 
 /* Style for navigation links' images on hover */
-.nav-bar ul li a:hover img {
+.nav-bar ul li.nav-item a:hover img {
   filter: invert(100%);
 }
 
 /* Style for navigation links when active */
-.nav-bar ul li a:active {
+.nav-bar ul li.nav-item a:active {
   color: #11101b;
   background: #fefefe;
-}
-
-/* Media query for smaller screens adjusting header padding */
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-
-/* Media query for even smaller screens further adjusting header padding */
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
 }
 
 /* Reset margin and padding for specific HTML elements */
