@@ -2,27 +2,34 @@
 <html lang="en">
 
 <head>
+    <!-- Document metadata: character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>Cart</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="css/CartCss.css">
+    <!-- Link to Google Fonts - Poppins -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- Link to external JavaScript file for behavior -->
     <script src="js/CartJS.js"></script>
 </head>
+
 <body>
+    <!-- Page header section -->
     <header>
         <!-- Navigation Bar -->
         <nav class="nav-bar">
             <ul>
                 <!-- Logo -->
-                <li><div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div></li>
+                <li><div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div></li> <!--Home Page-->
                 <!-- Navigation Links -->
-                <li class="nav-item"><a href="menu.html" class="active">Menu</a></li>
-                <li class="nav-item"><a href="locations.html" class="active">Locations</a></li>
-                <li class="nav-item"><a href="contact.html" class="active">Contact Us</a></li>
-                <li class="nav-item"><div class="shopping-bag"><a href="CartPage.html"><img src="img/shopping_bag.png" alt=""></a></div></li>
-                <li class="nav-item"><div class="register"><a href="register.html" class="active">Register</a></div></li>
-                <li class="nav-item"><div class="signin"><a href="signin.html" class="active">Sign In</a></div></li>
+                <li class="nav-item"><a href="menu.html" class="active">Menu</a></li> <!--Menu Page-->
+                <li class="nav-item"><a href="locations.html" class="active">Locations</a></li> <!--Locations Page-->
+                <li class="nav-item"><a href="contact.html" class="active">Contact Us</a></li> <!--Contact Us Page-->
+                <li class="nav-item"><div class="shopping-bag"><a href="CartPage.html"><img src="img/shopping_bag.png" alt=""></a></div></li> <!--Cart Page-->
+                <li class="nav-item"><div class="register"><a href="register.html" class="active">Register</a></div></li> <!--Register Page-->
+                <li class="nav-item"><div class="signin"><a href="signin.html" class="active">Sign In</a></div></li> <!--Sign In Page-->
             </ul>
         </nav>
     </header>
@@ -39,7 +46,7 @@
                     <th class="cartHeader">Quantity</th>
                     <th class="cartHeader">Subtotal</th>
                 </tr>
-                <!-- All items in cart follow this format -->
+                <!-- Sample item in the cart -->
                 <tr>
                     <td>
                         <div class="cart-info">
@@ -55,6 +62,7 @@
                     <td><input type="number" value="1" min="1"></td>
                     <td class="itemSubTotal">$8.99</td>
                 </tr>
+                <!-- Another sample item in the cart -->
                 <tr>
                     <td>
                         <div class="cart-info">
@@ -70,6 +78,7 @@
                     <td><input type="number" value="1" min="1"></td>
                     <td class="itemSubTotal">$8.99</td>
                 </tr>
+                <!-- Yet another sample item in the cart -->
                 <tr>
                     <td>
                         <div class="cart-info">
@@ -87,17 +96,20 @@
                 </tr>
             </table>
 
-            <!-- Price calculations -->
+            <!-- Price calculations section -->
             <div class="total-price">
                 <table>
+                    <!-- Subtotal line -->
                     <tr>
                         <td id="subtotal" class="finalTotal">Subtotal</td>
                         <td class="finalTotal">$26.97</td>
                     </tr>
+                    <!-- Tax line -->
                     <tr>
                         <td id="tax" class="finalTotal">Tax</td>
                         <td class="finalTotal">$2.75</td>
                     </tr>
+                    <!-- Total line -->
                     <tr>
                         <td id="total" class="finalTotal">Total</td>
                         <td class="finalTotal">$29.72</td>
