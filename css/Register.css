@@ -139,8 +139,8 @@ form {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Make the form width 100% within its container */
-  max-width: 500px; /* Add a max-width if needed */
+  width: 100%; 
+  max-width: 500px; 
 }
 label {
   display: block;
