@@ -1,98 +1,102 @@
-/* This css file is for the Cart page */
+/* 
+  This CSS file is for the Cart page 
+*/
+
 /* Reset some default styles for all elements */
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
+  margin: 0; /* Resetting margin */
+  padding: 0; /* Resetting padding */
+  list-style: none; /* Removing list styles */
+  text-decoration: none; /* Removing text decoration */
+  font-family: "Poppins", sans-serif; /* Setting default font */
+  box-sizing: border-box; /* Applying border-box sizing */
 }
 
 /* Style for the body element, including background image and overlay */
 body {
-  background: #fff;
-  margin: 0;
-  background-image: url("../img/rest.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
+  background: #fff; /* Setting background color */
+  margin: 0; /* Resetting margin */
+  background-image: url("../img/rest.jpg"); /* Setting background image */
+  background-position: center; /* Centering background image */
+  background-size: cover; /* Covering entire background with image */
+  background-repeat: no-repeat; /* No background image repetition */
+  background-attachment: fixed; /* Fixed background image */
+  height: 100vh; /* Full height of viewport */
 }
 
 /* Create a semi-transparent overlay over the background image */
 body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  content: ""; /* Empty content */
+  position: fixed; /* Fixed position */
+  top: 0; /* Positioned at the top */
+  left: 0; /* Positioned at the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1; /* Behind other elements */
 }
 
 /* Style for the header section, including navigation */
 header {
-  width: 100%;
-  height: 80px;
-  background: #11101b;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 100px;
+  width: 100%; /* Full width */
+  height: 80px; /* Fixed height */
+  background: #11101b; /* Dark background color */
+  display: flex; /* Flex display for alignment */
+  align-items: center; /* Centering items vertically */
+  justify-content: flex-start; /* Justify content to the start */
+  padding: 0 100px; /* Padding for the header */
 }
 
 /* Style for the logo image in the header */
 .logo img {
-  position: absolute;
-  top: 3px;
-  left: 40px;
-  width: 120px;
-  height: auto;
+  position: absolute; /* Absolute positioning */
+  top: 3px; /* Small top offset */
+  left: 40px; /* Small left offset */
+  width: 120px; /* Logo width */
+  height: auto; /* Maintain aspect ratio */
 }
 
+/* Navigation bar styling */
 .nav-bar {
-  padding-left: 80px;
+  padding-left: 80px; /* Padding for navigation items */
 }
 
 /* Style for the navigation bar and its list items */
 .nav-bar ul {
-  display: flex;
+  display: flex; /* Flex display for horizontal alignment */
 }
 
 .nav-bar ul li.nav-item a {
-  display: block;
-  color: #fefefe;
-  font-size: 20px;
-  padding: 10px 25px;
-  border-radius: 50px;
-  transition: 0.2s;
-  margin: 0 5px;
+  display: block; /* Block-level display for link */
+  color: #fefefe; /* Text color */
+  font-size: 20px; /* Font size */
+  padding: 10px 25px; /* Padding for each link */
+  border-radius: 50px; /* Rounded corners */
+  transition: 0.2s; /* Smooth transition */
+  margin: 0 5px; /* Margin between links */
 }
 
 /* Style for the shopping bag icon image in the navigation bar */
 .shopping-bag img {
-  width: 30px;
-  height: auto;
+  width: 30px; /* Icon width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* Style for navigation links on hover */
+/* Navigation links hover effect */
 .nav-bar ul li.nav-item a:hover {
-  color: #11101b;
-  background: #fefefe;
+  color: #11101b; /* Text color on hover */
+  background: #fefefe; /* Background color on hover */
 }
 
-/* Style for navigation links' images on hover */
+/* Navigation links' images on hover */
 .nav-bar ul li.nav-item a:hover img {
-  filter: invert(100%);
+  filter: invert(100%); /* Invert image color on hover */
 }
 
-/* Style for navigation links when active */
+/* Navigation links when active */
 .nav-bar ul li.nav-item a:active {
-  color: #11101b;
-  background: #fefefe;
+  color: #11101b; /* Text color when active */
+  background: #fefefe; /* Background color when active */
 }
 
 /* Reset margin and padding for specific HTML elements */
@@ -100,123 +104,130 @@ body,
 h1,
 h2,
 p {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Resetting margin */
+  padding: 0; /* Resetting padding */
 }
 
-/* for centering table */
+/* Centering the table on the page */
 .cart-page {
-  margin: 80px auto;
+  margin: 80px auto; /* Margin for centering */
 }
 
-/* text color */
+/* Text color for paragraphs and small text */
 p,
 small {
-  color: rgba(255, 255, 255, 0.726);
+  color: rgba(255, 255, 255, 0.726); /* Text color with alpha transparency */
 }
 
-/* table modifications */
+/* Table modifications */
 table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Collapse table borders */
 }
 
-/* item arrangements */
+/* Item arrangements in the cart */
 .cart-info {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Flex display for item arrangement */
+  flex-wrap: wrap; /* Allowing items to wrap to the next line */
 }
 
+/* Header cell styling */
 th {
-  color: #333;
-  padding: 10px;
-  text-align: left;
+  color: #333; /* Header text color */
+  padding: 10px; /* Padding for header cells */
+  text-align: left; /* Left-align text */
 }
 
-/* header customizations */
+/* Header customization for the cart */
 th.cartHeader {
-  text-align: left;
-  padding: 5px;
-  color: rgba(255, 255, 255, 0.726);
-  background-color: #ff523b;
-  font-weight: normal;
+  text-align: left; /* Left-align text */
+  padding: 5px; /* Padding for header cells */
+  color: rgba(255, 255, 255, 0.726); /* Text color with alpha transparency */
+  background-color: #ff523b; /* Header background color */
+  font-weight: normal; /* Normal font weight */
 }
 
-/* table data modifications */
+/* Table data modifications */
 td {
-  padding: 10px 5px;
-  border: 1px solid #333;
-  color: #333;
-  font-weight: bold;
-  background-color: rgb(156, 47, 17, 0.2);
+  padding: 10px 5px; /* Padding for table cells */
+  border: 1px solid #333; /* Table cell border */
+  color: #333; /* Text color */
+  font-weight: bold; /* Bold text */
+  background-color: rgb(156, 47, 17, 0.2); /* Background color with alpha transparency */
 }
 
+/* Input field styling within table cells */
 td input {
-  width: 40px;
-  height: 30px;
-  padding: 5px;
+  width: 40px; /* Input field width */
+  height: 30px; /* Input field height */
+  padding: 5px; /* Padding for input field */
 }
 
+/* Image styling within table cells */
 td img {
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
+  width: 80px; /* Image width */
+  height: 80px; /* Image height */
+  margin-right: 10px; /* Margin for image */
 }
 
+/* Link styling within table cells */
 td a {
-  color: #9dedd9;
-  font-size: 12px;
+  color: #9dedd9; /* Link color */
+  font-size: 12px; /* Link font size */
 }
 
-/* text color for totals */
+/* Text color for totals */
 .itemSubTotal {
-  color: rgba(255, 255, 255, 0.726);
+  color: rgba(255, 255, 255, 0.726); /* Text color with alpha transparency */
 }
 
+/* Styling for the total price section */
 .total-price {
-  display: flex;
-  justify-content: flex-end;
+  display: flex; /* Flex display for alignment */
+  justify-content: flex-end; /* Justify content to the end */
 }
 
 .total-price table {
-  border-top: 3px solid #ff523b;
-  width: 100%;
-  max-width: 400px;
+  border-top: 3px solid #ff523b; /* Border for total price table */
+  width: 100%; /* Full width */
+  max-width: 400px; /* Maximum width */
 }
 
-/* shift totals on bottom right */
+/* Aligning the last cell to the right */
 td:last-child {
-  text-align: right;
+  text-align: right; /* Right-align text */
 }
 
+/* Aligning the last header cell to the right */
 th:last-child {
-  text-align: right;
+  text-align: right; /* Right-align text */
 }
 
+/* Text color for the final total */
 .finalTotal {
-  color: rgba(255, 255, 255, 0.726);
+  color: rgba(255, 255, 255, 0.726); /* Text color with alpha transparency */
 }
 
-/* button styling subject to change */
+/* Button styling with room for future changes */
 #checkoutBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Flex display for alignment */
+  align-items: center; /* Centering items vertically */
+  justify-content: center; /* Justify content to the center */
 }
 
 button {
-  margin: 2px;
-  padding: 0.5em;
-  font-size: 2em;
-  border-radius: 30%;
-  position: relative;
-  background-color: #ff523b;
-  color: white;
+  margin: 2px; /* Margin for button */
+  padding: 0.5em; /* Padding for button */
+  font-size: 2em; /* Font size for button */
+  border-radius: 30%; /* Rounded corners */
+  position: relative; /* Relative positioning */
+  background-color: #ff523b; /* Button background color */
+  color: white; /* Text color */
 }
 
-/* responsiveness */
+/* Responsive design for screens with a maximum width of 600px */
 @media only screen and (max-width: 600px) {
   .cart-info p {
-    display: none;
+    display: none; /* Hide paragraphs within cart-info */
   }
 }

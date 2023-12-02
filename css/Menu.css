@@ -1,164 +1,216 @@
-/* Reset some default styles for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-  }
-  
-  /* Style for the body element, including background image and overlay */
-  body {
-    background: #fff;
-    margin: 0;
-    background-image: url("../img/rest.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-  }
-  
-  /* Create a semi-transparent overlay over the background image */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
-  
-  /* Style for the header section, including navigation */
-  header {
-    width: 100%;
-    height: 80px;
-    background: #11101b;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 100px;
-  }
-  
-  /* Style for the logo image in the header */
-  .logo img {
-    position: absolute;
-    top: 3px;
-    left: 40px;
-    width: 120px;
-    height: auto;
-  }
-  
-  .nav-bar {
-    padding-left: 80px;
-  }
-  
-  /* Style for the navigation bar and its list items */
-  .nav-bar ul {
-    display: flex;
-  }
-  
-  .nav-bar ul li.nav-item a {
-    display: block;
-    color: #fefefe;
-    font-size: 20px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
-  }
-  
-  /* Style for the shopping bag icon image in the navigation bar */
-  .shopping-bag img {
-    width: 30px;
-    height: auto;
-  }
-  
-  /* Style for navigation links on hover */
-  .nav-bar ul li.nav-item a:hover {
-    color: #11101b;
-    background: #fefefe;
-  }
-  
-  /* Style for navigation links' images on hover */
-  .nav-bar ul li.nav-item a:hover img {
-    filter: invert(100%);
-  }
-  
-  /* Style for navigation links when active */
-  .nav-bar ul li.nav-item a:active {
-    color: #11101b;
-    background: #fefefe;
-  }
-  
-  /* Reset margin and padding for specific HTML elements */
-  body,
-  h1,
-  h2,
-  p {
-    margin: 0;
-    padding: 0;
-  }
+/* 
+  This CSS file is for the Menu page 
+*/
 
-.Menu {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    padding: 20px;
-    justify-content: space-between; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    margin: 0 auto; /* Automatically set left and right margins to center the element */
+/* 
+  Reset some default styles for all elements 
+*/
+* {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  list-style: none; /* Remove list styles */
+  text-decoration: none; /* Remove text decoration */
+  font-family: "Poppins", sans-serif; /* Set default font family */
+  box-sizing: border-box; /* Apply border-box sizing */
 }
 
-Menu div {
-    width: calc(50% - 20px); 
-    margin: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid;
-} /* style for everything in the divs for items */
+/* 
+  Style for the body element, including background image and overlay 
+*/
+body {
+  background: #fff; /* Set background color */
+  margin: 0; /* Reset margin */
+  background-image: url("../img/rest.jpg"); /* Set background image */
+  background-position: center; /* Center background image */
+  background-size: cover; /* Cover entire background with image */
+  background-repeat: no-repeat; /* No background image repetition */
+  background-attachment: fixed; /* Fixed background image */
+  height: 100vh; /* Full viewport height */
+}
 
+/* 
+  Create a semi-transparent overlay over the background image 
+*/
+body::before {
+  content: ""; /* Empty content */
+  position: fixed; /* Fixed position */
+  top: 0; /* Positioned at the top */
+  left: 0; /* Positioned at the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1; /* Behind other elements */
+}
+
+/* 
+  Style for the header section, including navigation 
+*/
+header {
+  width: 100%; /* Full width */
+  height: 80px; /* Fixed height */
+  background: #11101b; /* Dark background color */
+  display: flex; /* Flex display for alignment */
+  align-items: center; /* Center-align items vertically */
+  justify-content: flex-start; /* Justify content to the start */
+  padding: 0 100px; /* Padding for the header */
+}
+
+/* 
+  Style for the logo image in the header 
+*/
+.logo img {
+  position: absolute; /* Absolute positioning */
+  top: 3px; /* Small top offset */
+  left: 40px; /* Small left offset */
+  width: 120px; /* Logo width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* 
+  Navigation bar styling 
+*/
+.nav-bar {
+  padding-left: 80px; /* Padding for navigation items */
+}
+
+/* 
+  Style for the navigation bar and its list items 
+*/
+.nav-bar ul {
+  display: flex; /* Flex display for horizontal alignment */
+}
+
+.nav-bar ul li.nav-item a {
+  display: block; /* Block-level display for link */
+  color: #fefefe; /* Text color */
+  font-size: 20px; /* Font size */
+  padding: 10px 25px; /* Padding for each link */
+  border-radius: 50px; /* Rounded corners */
+  transition: 0.2s; /* Smooth transition */
+  margin: 0 5px; /* Margin between links */
+}
+
+/* 
+  Style for the shopping bag icon image in the navigation bar 
+*/
+.shopping-bag img {
+  width: 30px; /* Icon width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* 
+  Style for navigation links on hover 
+*/
+.nav-bar ul li.nav-item a:hover {
+  color: #11101b; /* Text color on hover */
+  background: #fefefe; /* Background color on hover */
+}
+
+/* 
+  Style for navigation links' images on hover 
+*/
+.nav-bar ul li.nav-item a:hover img {
+  filter: invert(100%); /* Invert image color on hover */
+}
+
+/* 
+  Style for navigation links when active 
+*/
+.nav-bar ul li.nav-item a:active {
+  color: #11101b; /* Text color when active */
+  background: #fefefe; /* Background color when active */
+}
+
+/* 
+  Reset margin and padding for specific HTML elements 
+*/
+body,
+h1,
+h2,
+p {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+/* 
+  Style for the menu container 
+*/
+.Menu {
+  display: flex; /* Flex display for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  max-width: 800px; /* Maximum width */
+  padding: 20px; /* Padding */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  margin: 0 auto; /* Center-align horizontally */
+}
+
+/* 
+  Style for individual menu item containers 
+*/
+.Menu div {
+  width: calc(50% - 20px); /* Calculate width for two items per row */
+  margin: 10px; /* Margin around each item */
+  padding: 10px; /* Padding */
+  margin-bottom: 20px; /* Margin at the bottom of each item */
+  display: flex; /* Flex display for layout */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center-align text */
+}
+
+/* 
+  Style for the text inside menu item containers 
+*/
 .Menu div big {
-    color: white;
-} /* color for the div to white */
+  color: white; /* Text color */
+}
 
+/* 
+  Style for the menu heading 
+*/
 .Menu h1 {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size:xx-large;
-} /* color, alignment for h1 */
+  width: 100%; /* Full width */
+  text-align: center; /* Center-align text */
+  color: white; /* Text color */
+  font-size: xx-large; /* Larger font size */
+}
 
+/* 
+  Style for menu item images 
+*/
 .Menu img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
-} /* image, alignment for the images */
+  max-width: 100%; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+  width: 300px; /* Fixed width */
+}
 
+/* 
+  Style for menu item names 
+*/
 .Menu p {
-    margin: 10px 0;
-} /* margin for the Item Names */
+  margin: 10px 0; /* Margin top and bottom */
+}
 
+/* 
+  Style for larger text elements 
+*/
 .Menu big {
-    display: block;
-} /* text modification for the names */
+  display: block; /* Block-level display */
+}
 
+/* 
+  Style for the add to cart button 
+*/
 .addToCartButton {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    cursor: pointer;
-} /* Button styling */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Center-align text */
+  text-decoration: none; /* No text decoration */
+  display: inline-block; /* Inline block display */
+  font-size: 16px; /* Font size */
+  margin: 10px 0; /* Margin top and bottom */
+  cursor: pointer; /* Cursor pointer on hover */
+}
